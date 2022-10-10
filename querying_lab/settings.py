@@ -126,26 +126,8 @@ STATIC_URL = '/static/'
 
 # This will import the local_settings.py file
 # If you receive messages about missing a SECRET_KEY, you are likely missing the local_settings.py due to re-cloning your repo
-# try:
-#     from querying_lab.local_settings import *
-# except ImportError:
-#     pass
+try:
+    from querying_lab.local_settings import *
+except ImportError:
+    pass
 
-SECRET_KEY = '3tw(9e18zq178ivsp+nane92fg*(xjfibhdd)6fq)t1bp7kwd*'
-
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'mysql.connector.django',
-        'NAME': 'school_db',
-        'USER': 'root',
-        'PASSWORD': 'Julia2021',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-        'OPTIONS': {
-            'autocommit': True
-        }
-    }
-}

@@ -1,1 +1,1 @@
-# DjangoQueryingLab_PY_Starter
+Querying_lab project in "views.py"
